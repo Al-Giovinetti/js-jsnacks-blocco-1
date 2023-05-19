@@ -1,33 +1,12 @@
 //Il software deve chiedere per 10 volte all’utente di inserire un numero.Il programma stampa la somma di tutti i numeri inseriti.//
+let sum = 0;
 
-let inputNumbers = parseInt(prompt("dammi un numero"))
-let output = inputNumbers
+for (let index = 0; index < 10; index++) {
+   if(parseInt(prompt("Dammi un numero"))!=isNaN){
+    
+        // sum = sum + parseInt(prompt('Insert a number'));
+        sum += parseInt(prompt("Dammi un numero"))
 
-inputNumbers = parseInt(prompt("dammi un numero"))
-output = output + inputNumbers
-
-inputNumbers = parseInt(prompt("dammi un numero"))
-output = output + inputNumbers
-
-inputNumbers = parseInt(prompt("dammi un numero"))
-output = output + inputNumbers
-
-inputNumbers = parseInt(prompt("dammi un numero"))
-output = output + inputNumbers
-
-inputNumbers = parseInt(prompt("dammi un numero"))
-output = output + inputNumbers
-
-inputNumbers = parseInt(prompt("dammi un numero"))
-output = output + inputNumbers
-
-inputNumbers = parseInt(prompt("dammi un numero"))
-output = output + inputNumbers
-
-inputNumbers = parseInt(prompt("dammi un numero"))
-output = output + inputNumbers
-
-inputNumbers = parseInt(prompt("dammi un numero"))
-output = output + inputNumbers
-
-console.log(output)
+   }
+}
+console.log(sum)
