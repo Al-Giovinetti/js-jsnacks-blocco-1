@@ -1,27 +1,14 @@
-//Creo una lista di invitati
-const gatsbyList=["Biancaneve","Palla di lardo","Joker"];
+const guestList=["zio","mara","tizio","vizio","medesimo"]
 
-// chiedo un nome
-const inputName= prompt("dimmi il tuo nome")
-
-let enterParty = false
-
-for(let i=0; i<gatsbyList.length;i++){
-
-    if(gatsbyList[i]==inputName){
-        enterParty = true
+const userName=prompt("Qual'è il tuo nome?")
+let trovato= false
+for(let i = 0 ;i < guestList.length;i++){
+    if(guestList[i]==userName){
+        trovato=true
     }
-    console.log(enterParty,gatsbyList[i])
 }
-
-let output;
-if (enterParty == true){
-     output = "Sei in lista"
+if(trovato== true){
+    console.log("Prego puoi entrare")
 }else{
-    output="Vattene"
+    console.log("spiacente non sei sulla lista")
 }
-
-document.getElementById("output").innerHTML=output
-
-
-
